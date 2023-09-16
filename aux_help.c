@@ -19,7 +19,7 @@ write(STDOUT_FILENO, help, _strlen(help));
 */
 void aux_help_setenv(void)
 {
-char *help = "setenv: setenv (const char *name, const char *value, int replace)\n\t";
+char *help = "setenv: setenv (const char *nam, const char *val, int rplc)\n\t";
 write(STDOUT_FILENO, help, _strlen(help));
 
 help = "Add a new definition to the environment.\n";
@@ -85,6 +85,6 @@ write(STDOUT_FILENO, help, _strlen(help));
 help = "Exit shell.\n";
 write(STDOUT_FILENO, help, _strlen(help));
 
-help = "Exits the shell with a status of N. If N is omitted, the exit status is that of the last command executed.\n";
+help = "Exits the shell with a status of N. If N is omitted, the exit .\n";
 write(STDOUT_FILENO, help, _strlen(help));
 }

@@ -26,7 +26,7 @@ length++;
 n1 /= 10;
 }
 
-return length;
+return (length);
 }
 
 /**
@@ -42,7 +42,7 @@ char *buffer;
 
 buffer = malloc(sizeof(char) * (length + 1));
 if (buffer == NULL)
-return NULL;
+return (NULL);
 
 buffer[length] = '\0';
 
@@ -58,14 +58,13 @@ n1 = (unsigned int)n;
 
 length--;
 
-do
-{
+do {
 buffer[length] = (n1 % 10) + '0';
 n1 /= 10;
 length--;
 } while (n1 > 0);
 
-return buffer;
+return (buffer);
 }
 
 /**
@@ -100,5 +99,5 @@ result = result + ((s[i] - '0') * multiplier);
 multiplier /= 10;
 }
 
-return result * sign;
+return (result *sign);
 }

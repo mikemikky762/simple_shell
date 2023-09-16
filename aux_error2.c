@@ -7,49 +7,51 @@
 */
 char *error_env(data_shell *datash)
 {
-int length;
+int ln;
 char *error;
 char *ver_str;
 
 ver_str = aux_itoa(datash->counter);
-length = _strlen(datash->av[0]) + _strlen(ver_str) + _strlen(datash->args[0]) + 27; // Adjusted length calculation
-error = malloc(sizeof(char) * (length + 1));
+ln = _strlen(datash->av[0]) + _strlen(ver_str) + _strlen(datash->args[0]) + 27;
+/* Adjusted length calculation*/
+error = malloc(sizeof(char) * (ln + 1));
 
 if (error == NULL)
 {
 free(ver_str);
-return NULL;
+return (NULL);
 }
 
-snprintf(error, length + 1, "%s: %s: %s: Unable to add/remove from environment\n", datash->av[0], ver_str, datash->args[0]);
+snprintf(error, length + 1, "%s: \n", datash->av[0], ver_str, datash->args[0]);
 free(ver_str);
 
-return error;
+return (error);
 }
 
 /**
-* error_path_126 - generate error messages for path and failure denied permission.
+* error_path_126 - generate error msgs for path and falre denied permission.
 * @datash: data relevant (counter, arguments).
 * Return: The error strings.
 */
 char *error_path_126(data_shell *datash)
 {
-int length;
+int ln;
 char *error;
 char *ver_str;
 
 ver_str = aux_itoa(datash->counter);
-length = _strlen(datash->av[0]) + _strlen(ver_str) + _strlen(datash->args[0]) + 27; // Adjusted length calculation
-error = malloc(sizeof(char) * (length + 1));
+ln = _strlen(datash->av[0]) + _strlen(ver_str) + _strlen(datash->args[0]) + 27;
+/* Adjusted length calculation */
+error = malloc(sizeof(char) * (ln + 1));
 
 if (error == NULL)
 {
 free(ver_str);
-return NULL;
+return (NULL);
 }
 
-snprintf(error, length + 1, "%s: %s: %s: Permission denied\n", datash->av[0], ver_str, datash->args[0]);
+snprintf(error, length + 1, "%s: \n", datash->av[0], ver_str, datash->args[0]);
 free(ver_str);
 
-return error;
+return (error);
 }

@@ -21,7 +21,7 @@ i++;
 }
 
 dest[i] = '\0';
-return dest;
+return (dest);
 }
 
 /**
@@ -40,7 +40,7 @@ dest[a] = src[a];
 }
 dest[a] = '\0';
 
-return dest;
+return (dest);
 }
 
 /**
@@ -57,10 +57,10 @@ for (i = 0; s1[i] == s2[i] && s1[i]; i++)
 ;
 
 if (s1[i] > s2[i])
-return 1;
+return (1);
 if (s1[i] < s2[i])
-return -1;
-return 0;
+return (-1);
+return (0);
 }
 
 /**
@@ -105,5 +105,5 @@ break;
 if (found == 1)
 break;
 }
-return i;
+return (i);
 }
