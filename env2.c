@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* copy_info - Creates a new environment variable or alias by copying info.
+* copy_info -  Will create a new environment variable or alias by copying info.
 * @name: Name (environment variable or alias)
 * @value: Value (environment variable or alias)
 * Return: Newly created environment variable or alias.
@@ -25,7 +25,7 @@ return (new);
 
 /**
 * set_env - Sets an environment variable.
-* @name: Name of the environment variable
+* @name: Names the  environment variable
 * @value: Value of the environment variable
 * @datash: Data structure containing the environment variables
 * Return: No return value.

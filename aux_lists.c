@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* add_sep_node_end - Adds a separator character at the end of a separator list.
+* add_sep_node_end - Adds a separator character at the end of a separator lists.
 * @head: The head of the linked list.
-* @sep: The separator character to add (; | &).
+* @sep: The separator characters to add (; | &).
 * Return: The address of the updated head.
 */
 sep_list *add_sep_node_end(sep_list **head, char sep)
@@ -55,7 +55,7 @@ free(temp);
 }
 
 /**
-* add_line_node_end - Adds a command line at the end of a line list.
+* add_line_node_end -Will add a command line at end of a line list.
 * @head: The head of the linked list.
 * @line: The command line to add.
 * Return: The address of the updated head.

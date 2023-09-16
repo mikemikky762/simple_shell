@@ -3,9 +3,9 @@
 /**
 * add_rvar_node - Adds a variable at the end of a r_var list.
 * @head: The head of the linked list.
-* @lvar: The length of the variable.
-* @val: The value of the variable.
-* @lval: The length of the value.
+* @lvar: The length of the variables.
+* @val: The value of the variables.
+* @lval: The length of the values.
 * Return: The address of the updated head.
 */
 r_var *add_rvar_node(r_var **head, int lvar, char *val, int lval)

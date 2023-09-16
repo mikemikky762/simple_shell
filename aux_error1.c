@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* strcat_cd - Concatenate error message components.
+* strcat_cd - Concatenates error message components.
 *
 * @datash: Relevant data (directory).
 * @msg: Message to print.

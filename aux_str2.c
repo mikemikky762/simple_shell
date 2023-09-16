@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _strdup - Duplicates a string in heap memory.
+* _strdup - Will duplicate a string in heap memory.
 * @s: Source string.
 * Return: Duplicated string or NULL on failure.
 */
@@ -21,7 +21,7 @@ return (new);
 }
 
 /**
-* _strlen - Returns the length of a string.
+* _strlen - Will return the length of a string.
 * @s: Source string.
 * Return: Length of the string.
 */

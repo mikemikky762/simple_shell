@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-* exit_shell - Function to gracefully exit the shell.
-* @datash: Data structure containing relevant information (status and args).
+* exit_shell - Functions to gracefully exit the shell.
+* @datash: Data structures containing relevant information (status and args).
 * Return: 0 on successful exit.
 */
 int exit_shell(data_shell *datash)

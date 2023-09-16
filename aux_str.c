@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _strcat - Concatenates two strings.
+* _strcat -  Will concatenate two strings.
 * @dest: Destination string.
 * @src: Source string.
 * Return: Pointer to the destination string.
@@ -44,7 +44,7 @@ return dest;
 }
 
 /**
-* _strcmp - Compares two strings.
+* _strcmp - Will compare two strings.
 * @s1: First string.
 * @s2: Second string.
 * Return: 0 if strings are equal, positive if s1 > s2, negative if s1 < s2.
@@ -82,7 +82,7 @@ return ('\0');
 }
 
 /**
-* _strspn - Gets the length of a prefix substring.
+* _strspn -Will get the length of a prefix substring.
 * @s: Initial segment.
 * @accept: Accepted characters.
 * Return: Number of accepted characters at the beginning of 's'.

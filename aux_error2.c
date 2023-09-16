@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* error_env - generate error messages for env in get_env.
+* error_env - generates error messages for env in get_env.
 * @datash: data relevant (counters, arguments)
 * Return: error messages.
 */
@@ -28,7 +28,7 @@ return error;
 }
 
 /**
-* error_path_126 - generate error messages for path and failure denied permission.
+* error_path_126 - generates error messages for path and failure denied permission.
 * @datash: data relevant (counter, arguments).
 * Return: The error strings.
 */
