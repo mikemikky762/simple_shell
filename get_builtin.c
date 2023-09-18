@@ -7,7 +7,7 @@
 */
 int (*get_builtin(char *cmd))(data_shell *)
 {
-// Array of built-in command name and function pairs
+/* Array of built-in command name and function pairs */
 builtin_t builtin[] = {
 { "env", _env },
 { "exit", exit_shell },
@@ -19,13 +19,13 @@ builtin_t builtin[] = {
 };
 int i;
 
-// Iterate through the array to find a matching command
+/* Iterate through the array to find a matching command */
 for (i = 0; builtin[i].name; i++)
 {
 if (_strcmp(builtin[i].name, cmd) == 0)
 break;
 }
 
-// Return the function pointer corresponding to the matched command
+/* Return the function pointer corresponding to the matched command */
 return (builtin[i].f);
 }

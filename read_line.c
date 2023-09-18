@@ -7,10 +7,11 @@
 */
 char *read_line(int *i_eof)
 {
-char *input = NULL;     // Pointer to store the input string.
-size_t bufsize = 0;     // Initial buffer size for getline.
+char *input = NULL;     /* Pointer to store the input string. */
+size_t bufsize = 0;     /* Initial buffer size for getline. */
 
-*i_eof = getline(&input, &bufsize, stdin); // Read a line of input from stdin.
+*i_eof = getline(&input, &bufsize, stdin);
+/* Read a line of input from stdin. */
 
 return (input);
 }

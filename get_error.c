@@ -10,7 +10,7 @@ int get_error(data_shell *datash, int eval)
 {
 char *error;
 
-// Handle different error cases based on the evaluation code
+/* Handle different error cases based on the evaluation code */
 switch (eval)
 {
 case -1:
@@ -30,14 +30,14 @@ error = error_get_cd(datash);
 break;
 }
 
-// If an error message is generated, print it to STDERR
+/* If an error message is generated, print it to STDERR */
 if (error)
 {
 write(STDERR_FILENO, error, _strlen(error));
 free(error);
 }
 
-// Set the status based on the evaluation code and return it
+/* Set the status based on the evaluation code and return it */
 datash->status = eval;
 return (eval);
 }

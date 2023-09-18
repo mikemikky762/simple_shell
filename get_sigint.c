@@ -6,6 +6,6 @@
 */
 void get_sigint(int sig)
 {
-(void)sig; // Suppress unused parameter warning.
-write(STDOUT_FILENO, "\n^-^ ", 5); // Print a friendly message.
+(void)sig; /* Suppress unused parameter warning. */
+write(STDOUT_FILENO, "\n^-^ ", 5); /* Print a friendly message. */
 }

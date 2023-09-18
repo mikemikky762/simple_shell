@@ -21,14 +21,14 @@ big_number = ustatus > (unsigned int)INT_MAX;
 
 if (!is_digit || str_len > 10 || big_number)
 {
-// Error message for invalid exit status
+/* Error message for invalid exit status */
 get_error(datash, 2);
 datash->status = 2;
 return (1);
 }
-// Set the shell's status to the provided exit status (wrapped around 256)
+/* Set the shell's status to the provided exit status (wrapped around 256) */
 datash->status = (ustatus % 256);
 }
-// Return 0 indicating successful shell exit
+/* Return 0 indicating successful shell exit */
 return (0);
 }

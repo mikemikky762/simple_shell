@@ -27,35 +27,35 @@ free(ver_str);
 
 return (error);
 }
-
 /**
-<<<<<<< HEAD
-* error_path_126 - generate error msgs for path and falre denied permission.
-=======
-* error_path_126 - generates error messages for path and failure denied permission.
->>>>>>> da8f7d1b7cdcf45c373cf04ca41d2f74b77ea9b8
-* @datash: data relevant (counter, arguments).
+* error_path_126 - error messages for path and failure denied permission.
+* @datash: data relevants (counter, arguments).
+*
 * Return: The error strings.
 */
 char *error_path_126(data_shell *datash)
 {
-int ln;
-char *error;
+int length;
 char *ver_str;
+char *error;
 
 ver_str = aux_itoa(datash->counter);
-ln = _strlen(datash->av[0]) + _strlen(ver_str) + _strlen(datash->args[0]) + 27;
-/* Adjusted length calculation */
-error = malloc(sizeof(char) * (ln + 1));
-
-if (error == NULL)
+length = _strlen(datash->av[0]) + _strlen(ver_str);
+length += _strlen(datash->args[0]) + 24;
+error = malloc(sizeof(char) * (length + 1));
+if (error == 0)
 {
+free(error);
 free(ver_str);
 return (NULL);
 }
-
-snprintf(error, length + 1, "%s: \n", datash->av[0], ver_str, datash->args[0]);
+_strcpy(error, datash->av[0]);
+_strcat(error, ": ");
+_strcat(error, ver_str);
+_strcat(error, ": ");
+_strcat(error, datash->args[0]);
+_strcat(error, ": Permission denied\n");
+_strcat(error, "\0");
 free(ver_str);
-
 return (error);
 }

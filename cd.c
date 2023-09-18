@@ -50,11 +50,9 @@ else
 chdir("/");
 set_env("PWD", "/", datash);
 }
-
 datash->status = 0;
 free(cp_pwd);
 }
-
 /**
 * cd_to - Change to a user-specified directory.
 *
