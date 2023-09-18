@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* cmp_env_name - Compares environment variable names with the given name.
+* cmp_env_name - Will compare environment variable names with the given name.
 * @nenv: Name of the environment variable.
 * @name: Name to compare.
 * Return: 0 if they are not equal; otherwise, another value.
@@ -22,7 +22,7 @@ return (i + 1);
 }
 
 /**
-* _getenv - Gets the value of an environment variable.
+* _getenv - Will get the values of an environment variable.
 * @name: Name of the environment variable.
 * @_environ: Environment variables.
 * Return: The value of the environment variable if found, or NULL otherwise.

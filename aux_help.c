@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* aux_help_env - provides information for the builtin env
+* aux_help_env - provides informations for the builtin env
 * Return: void
 */
 void aux_help_env(void)
@@ -14,7 +14,7 @@ write(STDOUT_FILENO, help, _strlen(help));
 }
 
 /**
-* aux_help_setenv - provides information for the builtin setenv
+* aux_help_setenv - provides informations for the builtin setenv
 * Return: void
 */
 void aux_help_setenv(void)
@@ -27,7 +27,7 @@ write(STDOUT_FILENO, help, _strlen(help));
 }
 
 /**
-* aux_help_unsetenv - provides information for the builtin unsetenv
+* aux_help_unsetenv - provides informations for the builtin unsetenv
 * Return: void
 */
 void aux_help_unsetenv(void)

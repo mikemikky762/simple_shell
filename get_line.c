@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* bring_line - Assigns the line variable for get_line function.
+* bring_line - Will assign the line variable for get_line function.
 * @lineptr: Pointer to the buffer storing the input string.
 * @n: Pointer to the size of lineptr.
 * @buffer: The string passed to line.
@@ -33,7 +33,7 @@ free(buffer);
 }
 
 /**
-* get_line - Reads input from a stream.
+* get_line - Will read input from a stream.
 * @lineptr: Pointer to the buffer storing the input.
 * @n: Pointer to the size of lineptr.
 * @stream: Stream to read from.

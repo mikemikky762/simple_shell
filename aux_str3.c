@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* rev_string - Reverses a string in-place.
+* rev_string - Will reverse a string in-place.
 * @s: The input string to reverse.
 * Return: None.
 */
@@ -10,7 +10,11 @@ void rev_string(char *s)
 int count = 0, i, j;
 char *str, temp;
 
+<<<<<<< HEAD
 /* Determine the length of the string */
+=======
+// Determines the length of the string
+>>>>>>> da8f7d1b7cdcf45c373cf04ca41d2f74b77ea9b8
 while (count >= 0)
 {
 if (s[count] == '\0')

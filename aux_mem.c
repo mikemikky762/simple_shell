@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _memcpy - Copies data between void pointers.
+* _memcpy -Will copy data between void pointers.
 * @newptr: Destination pointer.
 * @ptr: Source pointer.
 * @size: Size of the new pointer.
@@ -58,7 +58,7 @@ return (newptr);
 }
 
 /**
-* _reallocdp - Reallocates memory blocks of double pointers.
+* _reallocdp -Will reallocates memory blocks of double pointers.
 * @ptr: Double pointers to the memory previously allocated.
 * @old_size: Size, in bytes, of the allocated spaces of ptr.
 * @new_size: New size, in bytes, of the new memory block.

@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* aux_help - Display information about the builtin help.
+* aux_help - Displays informations about the builtin help.
 * Return: void
 */
 void aux_help(void)
@@ -14,7 +14,7 @@ write(STDOUT_FILENO, help, _strlen(help));
 }
 
 /**
-* aux_help_alias - Display information about the builtin alias.
+* aux_help_alias - Displays informations about the builtin alias.
 * Return: void
 */
 void aux_help_alias(void)

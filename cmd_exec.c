@@ -23,7 +23,7 @@ return (0);
 }
 
 /**
-* _which - Locates a command in the system.
+* _which -  Will locate a command in the system.
 * @cmd: The command name.
 * @_environ: Environment variables.
 * Return: The location of the command.
@@ -72,7 +72,7 @@ return (NULL);
 }
 
 /**
-* is_executable - Determines if a command is executable.
+* is_executable -  Will determine if a command is executable.
 * @datash: Data structure.
 * Return: 0 if it's not executable, other number if it is.
 */

@@ -1,8 +1,9 @@
 #include "main.h"
 
+
 /**
-* exec_line - Function that identifies built-ins and commands and executes them.
-* @datash: Data structure containing relevant arguments.
+* exec_line - Functions that identify built-ins and commands and executes it.
+* @datash: Data structures containing relevant arguments.
 * Return: 1 on success.
 */
 int exec_line(data_shell *datash)
