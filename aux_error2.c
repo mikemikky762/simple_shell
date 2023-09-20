@@ -22,7 +22,7 @@ free(ver_str);
 return (NULL);
 }
 
-snprintf(error, length + 1, "%s: \n", datash->av[0], ver_str, datash->args[0]);
+snprintf(error, ln + 1, "%s: \n", datash->av[0], ver_str, datash->args[0]);
 free(ver_str);
 
 return (error);
