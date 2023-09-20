@@ -67,8 +67,8 @@ shell_loop(&datash); /* Start the shell loop. */
 free_data(&datash); /* Free allocated memory. */
 
 if (datash.status < 0)
-return 255; /* Return 255 for negative status. */
+return (255); /* Return 255 for negative status. */
 {
-return datash.status; /* Return the status code. */
+return (datash.status); /* Return the status code. */
 }
 }
