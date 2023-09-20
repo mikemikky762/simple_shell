@@ -20,75 +20,75 @@
 extern char **environ;
 
 /**
- * struct data - Struct that holds essential runtime data.
- * @av: Argument vector.
- * @input: User-provided command line input.
- * @args: Tokenized arguments.
- * @status: Last shell status.
- * @counter: Line counter.
- * @_environ: Environment variables.
- * @pid: Process ID of the shell.
- */
+* struct data - Struct that holds essential runtime data.
+* @av: Argument vector.
+* @input: User-provided command line input.
+* @args: Tokenized arguments.
+* @status: Last shell status.
+* @counter: Line counter.
+* @_environ: Environment variables.
+* @pid: Process ID of the shell.
+*/
 typedef struct data
 {
-    char **av;
-    char *input;
-    char **args;
-    int status;
-    int counter;
-    char **_environ;
-    char *pid;
+char **av;
+char *input;
+char **args;
+int status;
+int counter;
+char **_environ;
+char *pid;
 } data_shell;
 
 /**
- * struct sep_list_s - Single linked list to store separators.
- * @separator: Separator character (;, |, or &).
- * @next: Pointer to the next node.
- * Description: Used for managing command line separators.
- */
+* struct sep_list_s - Single linked list to store separators.
+* @separator: Separator character (;, |, or &).
+* @next: Pointer to the next node.
+* Description: Used for managing command line separators.
+*/
 typedef struct sep_list_s
 {
-    char separator;
-    struct sep_list_s *next;
+char separator;
+struct sep_list_s *next;
 } sep_list;
 
 /**
- * struct line_list_s - Single linked list to store command lines.
- * @line: Command line.
- * @next: Pointer to the next node.
- * Description: Used for storing command lines.
- */
+* struct line_list_s - Single linked list to store command lines.
+* @line: Command line.
+* @next: Pointer to the next node.
+* Description: Used for storing command lines.
+*/
 typedef struct line_list_s
 {
-    char *line;
-    struct line_list_s *next;
+char *line;
+struct line_list_s *next;
 } line_list;
 
 /**
- * struct r_var_list - Single linked list to store variables.
- * @len_var: Length of the variable name.
- * @val: Value of the variable.
- * @len_val: Length of the value.
- * @next: Pointer to the next node.
- * Description: Used for managing runtime variables.
- */
+* struct r_var_list - Single linked list to store variables.
+* @len_var: Length of the variable name.
+* @val: Value of the variable.
+* @len_val: Length of the value.
+* @next: Pointer to the next node.
+* Description: Used for managing runtime variables.
+*/
 typedef struct r_var_list
 {
-    int len_var;
-    char *val;
-    int len_val;
-    struct r_var_list *next;
+int len_var;
+char *val;
+int len_val;
+struct r_var_list *next;
 } r_var;
 
 /**
- * struct builtin_s - Builtin struct for command arguments.
- * @name: The name of the builtin command (e.g., cd, exit, env).
- * @f: Pointer to the corresponding function.
- */
+* struct builtin_s - Builtin struct for command arguments.
+* @name: The name of the builtin command (e.g., cd, exit, env).
+* @f: Pointer to the corresponding function.
+*/
 typedef struct builtin_s
 {
-    char *name;
-    int (*f)(data_shell *datash);
+char *name;
+int (*f)(data_shell *datash);
 } builtin_t;
 
 /* Function prototypes for various parts of the code. */
