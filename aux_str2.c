@@ -36,7 +36,7 @@ return (len);
 }
 
 /**
-* cmp_chars - Compares characters of two strings.
+* cmp_chars - Will compare characters of two strings.
 * @str: Input string.
 * @delim: Delimiters.
 * Return: 1 if the characters match, 0 otherwise.

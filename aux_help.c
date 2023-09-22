@@ -74,7 +74,7 @@ write(STDOUT_FILENO, help, _strlen(help));
 }
 
 /**
-* aux_help_exit - provides information for the builtin exit
+* aux_help_exit - provide informations for the builtin exit
 * Return: void
 */
 void aux_help_exit(void)

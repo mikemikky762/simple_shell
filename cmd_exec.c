@@ -72,7 +72,7 @@ return (NULL);
 }
 
 /**
-* is_executable -  Will determine if a command is executable.
+* is_executable -  Determines if a command is executable.
 * @datash: Data structure.
 * Return: 0 if it's not executable, other number if it is.
 */

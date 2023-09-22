@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* cd_dot - Change to the parent directory.
+* cd_dot - Changes to the parent directory.
 *
 * @datash: Data relevant to the environment.
 * Return: None.
@@ -54,7 +54,7 @@ datash->status = 0;
 free(cp_pwd);
 }
 /**
-* cd_to - Change to a user-specified directory.
+* cd_to - Changes to a user-specified directory.
 *
 * @datash: Data relevant to directories.
 * Return: None.
@@ -87,7 +87,7 @@ chdir(dir);
 }
 
 /**
-* cd_previous - Change to the previous directory.
+* cd_previous - Changes to the previous directory.
 *
 * @datash: Data relevant to the environment.
 * Return: None.
@@ -128,7 +128,7 @@ chdir(p_pwd);
 }
 
 /**
-* cd_to_home - Change to the home directory.
+* cd_to_home - Changes to the home directory.
 *
 * @datash: Data relevant to the environment.
 * Return: None.

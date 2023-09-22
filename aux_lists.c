@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* add_sep_node_end - Adds a separator character at the end of a separator lists.
+* add_sep_node_end - Will separate character at end separator lists.
 * @head: The head of the linked list.
 * @sep: The separator characters to add (; | &).
 * Return: The address of the updated head.

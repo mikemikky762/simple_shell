@@ -36,7 +36,7 @@ free(ver_str);
 return (error);
 }
 /**
-*  * error_path_126 - error messages for path and failure denied permission.
+*  * error_path_126 - error message for path and failure denied permission.
 *   * @datash: data relevants (counter, arguments).
 *    *
 *     * Return: The error strings.

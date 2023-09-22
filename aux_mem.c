@@ -58,7 +58,7 @@ return (newptr);
 }
 
 /**
-* _reallocdp -Will reallocates memory blocks of double pointers.
+* _realloc - Reallocates memory blocks of double pointers.
 * @ptr: Double pointers to the memory previously allocated.
 * @old_size: Size, in bytes, of the allocated spaces of ptr.
 * @new_size: New size, in bytes, of the new memory block.

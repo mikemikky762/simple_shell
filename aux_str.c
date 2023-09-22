@@ -82,7 +82,7 @@ return ('\0');
 }
 
 /**
-* _strspn -Will get the length of a prefix substring.
+* _strspn - Gets the length of a prefix substring.
 * @s: Initial segment.
 * @accept: Accepted characters.
 * Return: Number of accepted characters at the beginning of 's'.

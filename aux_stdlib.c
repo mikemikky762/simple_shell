@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* get_len - Calculate the number of digits in an integer.
+* get_len -  Will calculate the number of digits in an integer.
 * @n: The integer value.
 * Return: The number of digits.
 */

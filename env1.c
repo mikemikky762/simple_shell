@@ -53,7 +53,7 @@ return (ptr_env + mov);
 }
 
 /**
-* _env - Prints the environment variables.
+* _env - Will print the environment variables.
 * @datash: Data relevant to the shell.
 * Return: 1 on success.
 */

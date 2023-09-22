@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* repeated_char - Count the repetitions of a character in a string.
+* repeated_char - Counts the repetitions of a character in a string.
 * @input: Input string.
 * @i: Index.
 * Return: Number of repetitions.
@@ -15,7 +15,7 @@ return (i);
 }
 
 /**
-* error_sep_op - Find syntax errors in the input.
+* error_sep_op - Finds syntax errors in the input.
 * @input: Input string.
 * @i: Index.
 * @last: Last character read.
@@ -66,7 +66,7 @@ return (error_sep_op(input + 1, i + 1, *input));
 }
 
 /**
-* first_char - Find the index of the first non-space, non-tab character.
+* first_char - Finds the index of the first non-space, non-tab character.
 * @input: Input string.
 * @i: Index.
 * Return: -1 if there is an error, 0 otherwise.
@@ -88,7 +88,7 @@ return (0);
 }
 
 /**
-* print_syntax_error - Print a syntax error message.
+* print_syntax_error - Prints a syntax error message.
 * @datash: Data structure.
 * @input: Input string.
 * @i: Index of the error.
@@ -140,7 +140,7 @@ free(counter);
 }
 
 /**
-* check_syntax_error - Check for syntax errors in the input.
+* check_syntax_error - Checks for syntax errors in the input.
 * @datash: Data structure.
 * @input: Input string.
 * Return: 1 if there is an error, 0 otherwise.

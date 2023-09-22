@@ -39,7 +39,7 @@ return (*head);
 }
 
 /**
-* free_rvar_list - Frees an r_var list.
+* free_rvar_list - Will frees an r_var list.
 * @head: The head of the linked list.
 * Return: void.
 */
